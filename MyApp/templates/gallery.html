@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+     {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gallery</title>
+     <link rel="stylesheet" href="{% static 'css/style1.css' %}">
+</head>
+<body>
+<a href="{% url 'my_index' %}">Home</a>
+<a href="{% url 'my-about' %}">About</a>
+<a href="{% url 'my-contact' %}">Reach out to us</a>
+<a href="{% url 'my_gallery' %}">Gallery</a>
+<a href="{% url 'my-services' %}">Our Services</a>
+<h2>Here are our mbotos,</h2>
+<img src="{% static 'images/sport1.jpeg' %}" alt="">
+<img src="{% static 'images/sport2.jpeg' %}" alt="">
+<img src="{% static 'images/sport3.jpeg' %}" alt="">
+<img src="{% static 'images/sport4.jpeg' %}" alt="">
+<img src="{% static 'images/sport5.jpeg' %}" alt="">
+</body>
+</html>
